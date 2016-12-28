@@ -1,0 +1,9 @@
+$(".toolbar").click(function(){
+    $(".toolbar").addClass("toolbar-show");
+    $(".toolbar-item").css("display","block");
+})
+$("#close").click(function(e){
+    $(".toolbar").removeClass("toolbar-show");
+    $(".toolbar-item").css("display","none");
+    e.stopPropagation();
+})
