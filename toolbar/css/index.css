@@ -9,7 +9,7 @@ body,html{
   position: fixed;
   right: 10%;
   bottom: 40%;
-  z-index: 500;
+  z-index: 999;
   height: 44px;
   width: 44px;
   background: #CDCCCC;
@@ -19,7 +19,7 @@ body,html{
   background-position: center;
   background-size:24px;
   transform-origin: right;
-  transition: all .5s;
+  transition: all .7s;
 }
 .toolbar-item{
   display: none;
