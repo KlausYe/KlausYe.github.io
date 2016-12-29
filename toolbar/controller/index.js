@@ -1,7 +1,7 @@
 $(".toolbar").click(function(){
     $(".toolbar").addClass("toolbar-show");
-    $(".toolbar-item").show();
-    $("#toolbarMask").show();
+    $(".toolbar-item").css("display","block");
+    $("#toolbarMask").css("display","block");
     $("#toolbarMask").one("click",function() {
         toolbarHide();
     });
@@ -13,7 +13,7 @@ $("#close").click(function(e){
 })
 function toolbarHide(){
     $(".toolbar").removeClass("toolbar-show");
-    $(".toolbar-item").hide();
-    $("#toolbarMask").hide();
+    $(".toolbar-item").css("display","none");
+    $("#toolbarMask").css("display","none");
 }
 
