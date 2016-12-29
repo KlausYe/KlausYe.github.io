@@ -8,7 +8,6 @@ $(".toolbar").click(function(){
 })
 $("#close").click(function(e){
     toolbarHide();
-    $("#toolbarMask").off("click");
     e.stopPropagation();
 })
 function toolbarHide(){
