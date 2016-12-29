@@ -2,7 +2,7 @@ $(".toolbar").click(function(){
     $(".toolbar").addClass("toolbar-show");
     $(".toolbar-item").css("display","block");
     $("#toolbarMask").css("display","block");
-    $("#toolbarMask").one("click",function() {
+    $("#toolbarMask").off("click").one("click",function() {
         toolbarHide();
     });
 })
